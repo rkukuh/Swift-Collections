@@ -5,8 +5,6 @@
 //  Created by R. Kukuh on 25/03/23.
 //
 
-import Foundation
-
 import XCTest
 @testable import SwiftCollections
 
