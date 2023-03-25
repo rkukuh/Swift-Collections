@@ -32,7 +32,7 @@ These following methods (or properties) are all available on native Swift collec
 
 ### `average`
 
-The `average` method returns the average value of a given collection data:
+The `average` method returns the average value of a given collection data.
 
 #### Array
 
