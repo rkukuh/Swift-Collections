@@ -4,7 +4,7 @@ The `SwiftCollections` package provides a fluent, convenient extensions for work
 
 ## Installation
 
-1. Open your existing Xcode project or create a new one
+1. Open your existing Xcode project or create a new one.
 2. In the Xcode menu, go to `File > Add Packages....`
 3. In the Search or Enter Package URL field, enter: `https://github.com/rkukuh/Swift-Collections.git`.  
 Press <kbd>Return</kbd> to load the package.
@@ -23,8 +23,7 @@ import SwiftCollections
 
 ## Available Methods
 
-These following methods (or properties) are all available on native Swift collection types: `Array`, `Set`, and `Dictionary`.  
-See [Usage](https://github.com/rkukuh/Swift-Collections/edit/main/README.md#usage) section below for detail.
+These following methods (or properties) are all available on native Swift collection types: `Array`, `Set`, and `Dictionary`. See [Usage](https://github.com/rkukuh/Swift-Collections/edit/main/README.md#usage) section below for detail.
 
 - [`average`](https://github.com/rkukuh/Swift-Collections/edit/main/README.md#average)
 - [`chunk`](https://github.com/rkukuh/Swift-Collections/edit/main/README.md#chunk)
