@@ -1,6 +1,6 @@
-# Swift Collections
+# Swift-Collections
 
-The `Swift Collections` provides a fluent, convenient extensions for working with collection of data.
+The `SwiftCollections` package provides a fluent, convenient extensions for working with collection of data.
 
 ## Available Methods
 
