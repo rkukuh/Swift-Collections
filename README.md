@@ -19,7 +19,7 @@ The `average` method returns the average value of a given collection data:
 let numberArray: [Double] = [1, 1.5, 2.5, 4]
 
 if let avg = numberArray.average {
-    print("The average is \(avg)") // The average is 2.0
+    print("The average is \(avg)")
 } else {
     print("The array is empty.")
 }
@@ -33,12 +33,12 @@ if let avg = numberArray.average {
 let numberSet: Set<Double> = [1, 1.5, 2.5, 4]
 
 if let avg = numberSet.average {
-    print("The average is \(avg)") // The average is 2.3333333333333335
+    print("The average is \(avg)")
 } else {
     print("The set is empty.")
 }
 
-The average is 2.25
+// The average is 2.25
 ```
 
 #### Dictionary
