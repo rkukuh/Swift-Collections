@@ -127,6 +127,23 @@ print(stringArrayChunks)
 //[["A", "B", "C"], ["D", "E", "F"], ["G"]]
 ```
 
+```swift
+struct Person {
+    let name: String
+}
+
+let people = [
+    Person(name: "Alice"),
+    Person(name: "Bob"),
+    Person(name: "Carol"),
+]
+
+let peopleChunks = people.chunked(by: 2)
+print(peopleChunks)
+
+// [[Person(name: "Alice"), Person(name: "Bob")], [Person(name: "Carol")]]
+```
+
 #### Set
 
 ```swift
