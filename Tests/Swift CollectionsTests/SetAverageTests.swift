@@ -6,6 +6,7 @@
 //
 
 import XCTest
+@testable import Swift_Collections
 
 class SetAverageTests: XCTestCase {
     func testAverageOfEmptySet() {
