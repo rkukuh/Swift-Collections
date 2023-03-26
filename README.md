@@ -23,10 +23,10 @@ import SwiftCollections
 
 ## Available Methods
 
-These following methods (or properties) are all available on native Swift collection types: `Array`, `Set`, and `Dictionary`. See [Usage](https://github.com/rkukuh/Swift-Collections/edit/main/README.md#usage) section below for detail.
+These following methods (or properties) are all available on native Swift collection types: `Array`, `Set`, and `Dictionary`. See [Usage](https://github.com/rkukuh/Swift-Collections#usage) section below for detail.
 
-- [`average`](https://github.com/rkukuh/Swift-Collections/edit/main/README.md#average)
-- [`chunk`](https://github.com/rkukuh/Swift-Collections/edit/main/README.md#chunk)
+- [`average`](https://github.com/rkukuh/Swift-Collections#average)
+- [`chunk`](https://github.com/rkukuh/Swift-Collections#average)
 
 ## Usage
 
