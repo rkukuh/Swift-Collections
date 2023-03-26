@@ -1,4 +1,4 @@
-# Swift-Collections
+# Swift Collections
 
 The `SwiftCollections` package provides a fluent, convenient extensions for working with collection of data.
 
