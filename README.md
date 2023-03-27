@@ -171,7 +171,17 @@ The `collapse` method collapses a collection of data into a single, flat collect
 #### Array
 
 ```swift
-//
+let nestedArray: [[Int]] = [[1, 2], [3, 4, 5], [6]]
+let collapsedArray = nestedArray.collapse()
+
+print(collapsedArray) // [1, 2, 3, 4, 5, 6]
+```
+
+```swift
+let mixedNestedArray: [[Any]] = [["A", "B"], [1, 2, 3], [true, false]]
+let mixedCollapsedArray = mixedNestedArray.collapse()
+
+print(mixedCollapsedArray) ["A", "B", 1, 2, 3, true, false]
 ```
 
 #### Set
