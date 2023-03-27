@@ -31,6 +31,7 @@ These following methods (or properties) are all available on native Swift collec
 
 - [`average`](https://github.com/rkukuh/Swift-Collections#average)
 - [`chunk`](https://github.com/rkukuh/Swift-Collections#average)
+- [`collapse`](https://github.com/rkukuh/Swift-Collections#collapse)
 - [`sum`](https://github.com/rkukuh/Swift-Collections#sum)
 
 ## Usage
@@ -73,7 +74,9 @@ if let avg = numberDict.average {
 } else {
     print("The dictionary is empty.")
 }
+```
 
+```swift
 let doubleDict: [String: [Double]] = [
     "foo": [10.5, 40.5],
     "bar": [10, 20]
@@ -84,7 +87,9 @@ if let avg = doubleDict.average(forKey: "foo") {
 } else {
     print("No values found for the specified key.")
 }
+```
 
+```swift
 let doubleDict: [String: [Double]] = [
     "foo": [10.5, 40.5],
     "bar": [10, 20],
@@ -140,7 +145,9 @@ let numberSet: Set<Int> = [1, 2, 3, 4, 5, 6, 7]
 let numberSetChunks = numberSet.chunked(by: 3)
 
 print(numberSetChunks) // [[7, 4, 1], [3, 5, 6], [2]]
+```
 
+```swift
 let stringSet: Set<String> = ["A", "B", "C", "D", "E", "F", "G"]
 let stringSetChunks = stringSet.chunked(by: 3)
 
@@ -157,6 +164,29 @@ print(numberDictChunks)
 // [[("b", 2), ("c", 3), ("d", 4)], [("e", 5), ("a", 1), ("g", 7)], [("f", 6)]]
 ```
 
+### `collapse`
+
+The `collapse` method collapses a collection of data into a single, flat collection.
+
+#### Array
+
+```swift
+//
+```
+
+#### Set
+
+```swift
+//
+```
+
+
+#### Dictionary
+
+```swift
+//
+```
+
 ### `sum`
 
 The `sum` method returns the sum of all items in the collection.
@@ -165,9 +195,13 @@ The `sum` method returns the sum of all items in the collection.
 
 ```swift
 let intArray = [1, 2, 3, 4, 5]
-print(intArray.sum()) // 15
 
+print(intArray.sum()) // 15
+```
+
+```swift
 let doubleArray = [1, 2.5, 3.75, 4.5, 5]
+
 print(doubleArray.sum()) // 16.75
 ```
 
@@ -175,9 +209,13 @@ print(doubleArray.sum()) // 16.75
 
 ```swift
 let intSet: Set<Int> = [10, 20, 30, 40, 50]
-print(intSet.sum()) // 150
 
+print(intSet.sum()) // 150
+```
+
+```swift
 let doubleSet: Set<Double> = [10, 20, 30.75, 40.5, 50]
+
 print(doubleSet.sum()) // 151.25
 ```
 
@@ -187,14 +225,19 @@ print(doubleSet.sum()) // 151.25
 let stringIntDict: [String: Int] = [
     "a": 1, "b": 2, "c": 3, "d": 4, "e": 5
 ]
-print(stringIntDict.sum()) // 15
 
+print(stringIntDict.sum()) // 15
+```
+
+```swift
 let stringDoubleDict: [String: Double] = [
     "a": 1.25, "b": 2, "c": 3.5, "d": 4, "e": 5
 ]
+
 print(stringDoubleDict.sum()) // 15.75
+```
 
-
+```swift
 let stringIntArrayDict: [String: [Int]] = [
     "foo": [10, 40],
     "bar": [10, 20]
@@ -205,7 +248,9 @@ if let sum = stringIntArrayDict.sum(forKey: "foo") {
 } else {
     print("No values found for the specified key.")
 }
+```
 
+```swift
 let stringDoubleArrayDict: [String: [Double]] = [
     "foo": [10.5, 40.5],
     "bar": [10, 20]
@@ -216,8 +261,9 @@ if let sum = stringDoubleArrayDict.sum(forKey: "foo") {
 } else {
     print("No values found for the specified key.")
 }
+```
 
-
+```swift
 let intDictSumAll: [String: [Int]] = [
     "foo": [10, 40],
     "bar": [10, 20],
@@ -226,8 +272,11 @@ let intDictSumAll: [String: [Int]] = [
 ]
 
 let intSumAll = intDictSumAll.sumAll()
-print(intSumAll) // ["bar": 30, "y": 16, "foo": 50, "x": 26]
 
+print(intSumAll) // ["bar": 30, "y": 16, "foo": 50, "x": 26]
+```
+
+```swift
 let doubleDictSumAll: [String: [Double]] = [
     "foo": [10, 40],
     "bar": [10.25, 20.5],
@@ -236,6 +285,7 @@ let doubleDictSumAll: [String: [Double]] = [
 ]
 
 let doubleSumAll = doubleDictSumAll.sumAll()
+
 print(doubleSumAll) // ["bar": 30.75, "y": 16.25, "x": 26.75, "foo": 50.0]
 ```
 
