@@ -1,6 +1,6 @@
 # Swift Collections
 
-The `SwiftCollections` package provides a fluent, convenient extensions for working with collection of data.
+The `SwiftCollections` is a **Swift package**  that provides a fluent, convenient extensions for working with collection of data.
 
 ![Platform](https://img.shields.io/badge/platforms-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS-333333.svg)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/rkukuh/Swift-Collections)
