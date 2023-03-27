@@ -1,6 +1,6 @@
 # Swift Collections
 
-The `SwiftCollections` is a **Swift package**  that provides a fluent, convenient extensions for working with collection of data.
+The is a **Swift package**  that provides a fluent, convenient extensions for working with collection of data in a more elegant and expressive manner.
 
 ![Platform](https://img.shields.io/badge/platforms-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS-333333.svg)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/rkukuh/Swift-Collections)
@@ -27,7 +27,7 @@ import SwiftCollections
 
 ## Available Methods
 
-These following methods (or properties) are all available on native Swift collection types: `Array`, `Set`, and `Dictionary`. See [Usage](https://github.com/rkukuh/Swift-Collections#usage) section below for detail.
+These following methods (or properties) are all available on native Swift collection data types: `Array`, `Set`, and `Dictionary`.
 
 - [`average`](https://github.com/rkukuh/Swift-Collections#average)
 - [`chunk`](https://github.com/rkukuh/Swift-Collections#average)
