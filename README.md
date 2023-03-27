@@ -187,7 +187,27 @@ print(mixedCollapsedArray) ["A", "B", 1, 2, 3, true, false]
 #### Set
 
 ```swift
-//
+let nestedSetOfInts: Set<Set<Int>> = [
+    [1, 2, 3],
+    [4, 5],
+    [6, 7, 8, 9]
+]
+
+let collapsedSetOfInts = nestedSetOfInts.collapse()
+
+print(collapsedSetOfInts) // [3, 1, 7, 4, 8, 6, 9, 5, 2]
+```
+
+```swift
+let nestedSetOfStrings: Set<Set<String>> = [
+    ["apple", "banana", "cherry"],
+    ["orange", "grape"],
+    ["pineapple", "mango"]
+]
+
+let collapsedSetOfStrings = nestedSetOfStrings.collapse()
+
+print(collapsedSetOfStrings) // ["cherry", "pineapple", "banana", "mango", "grape", "apple", "orange"]
 ```
 
 
