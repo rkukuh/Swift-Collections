@@ -27,7 +27,7 @@ import SwiftCollections
 
 ## Available Methods
 
-These following methods (or properties) are all available on native Swift collection data types: `Array`, `Set`, and `Dictionary`.
+These following methods are all available on native Swift collection data types: `Array`, `Set`, and `Dictionary`.
 
 - [`average`](https://github.com/rkukuh/Swift-Collections#average)
 - [`chunk`](https://github.com/rkukuh/Swift-Collections#average)
