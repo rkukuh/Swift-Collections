@@ -214,7 +214,27 @@ print(collapsedSetOfStrings) // ["cherry", "pineapple", "banana", "mango", "grap
 #### Dictionary
 
 ```swift
-//
+let dictWithArrays: [String: [Int]] = [
+    "a": [1, 2, 3],
+    "b": [4, 5],
+    "c": [6, 7, 8, 9]
+]
+
+let collapsedArray = dictWithArrays.collapse()
+
+print(collapsedArray) // [1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
+
+```swift
+let dictWithSets: [String: Set<String>] = [
+    "first": Set(["a", "b", "c"]),
+    "second": Set(["d", "e"]),
+    "third": Set(["f", "g", "h"])
+]
+
+let collapsedSet = dictWithSets.collapse()
+
+print(collapsedSet) // ["d", "e", "f", "h", "g", "b", "a", "c"]
 ```
 
 ### `sum`
