@@ -32,6 +32,7 @@ These following methods are all available on native Swift collection data types:
 - [`average`](https://github.com/rkukuh/Swift-Collections#average)
 - [`chunk`](https://github.com/rkukuh/Swift-Collections#average)
 - [`collapse`](https://github.com/rkukuh/Swift-Collections#collapse)
+- [`combine`](https://github.com/rkukuh/Swift-Collections#combine)
 - [`sum`](https://github.com/rkukuh/Swift-Collections#sum)
 
 ## Usage
@@ -236,6 +237,23 @@ let collapsedSet = dictWithSets.collapse()
 
 print(collapsedSet) // ["d", "e", "f", "h", "g", "b", "a", "c"]
 ```
+
+### `combine`
+
+The `collapse` method combines the values of the collection, as keys, with the values of another array or collection.
+
+#### Array
+
+```swift
+
+let people = ["andy", "becky", "catherine"]
+let age = [25, 30, 20]
+
+let combined = try people.combine(with: age)
+
+print(combined) // ["becky": 30, "catherine": 20, "andy": 25]
+```
+
 
 ### `sum`
 
