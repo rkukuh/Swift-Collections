@@ -21,6 +21,7 @@ class SetCombineTests: XCTestCase {
         }
         
         let keysMismatched: Set = ["a", "b", "c"]
+        
         XCTAssertThrowsError(try keysMismatched.combine(with: values)) { error in
             XCTAssertEqual(error as? SetCombineError, .mismatchedSize, "The error should be a mismatchedSize error.")
         }
