@@ -240,7 +240,7 @@ print(collapsedSet) // ["d", "e", "f", "h", "g", "b", "a", "c"]
 
 ### `combine`
 
-The `collapse` method combines the values of the collection, as keys, with the values of another array or collection.
+The `combine` method combines the values of the collection, as keys, with the values of another array or collection.
 
 #### Array
 
