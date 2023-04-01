@@ -27,11 +27,12 @@ import SwiftCollections
 
 ## Available Methods
 
-These following methods are all available on native Swift collection data types: `Array`, `Set`, and `Dictionary`.
+These following methods are all available on native Swift collection data types: `Array`, `Set`, and/or `Dictionary`.
 
 - [`average`](https://github.com/rkukuh/Swift-Collections#average)
 - [`chunk`](https://github.com/rkukuh/Swift-Collections#average)
 - [`collapse`](https://github.com/rkukuh/Swift-Collections#collapse)
+- [`combine`](https://github.com/rkukuh/Swift-Collections#combine)
 - [`sum`](https://github.com/rkukuh/Swift-Collections#sum)
 
 ## Usage
@@ -236,6 +237,34 @@ let collapsedSet = dictWithSets.collapse()
 
 print(collapsedSet) // ["d", "e", "f", "h", "g", "b", "a", "c"]
 ```
+
+### `combine`
+
+The `combine` method combines the values of the collection, as keys, with the values of another array or collection.
+
+#### Array
+
+```swift
+let people = ["andy", "becky", "catherine"]
+let age = [25, 30, 20]
+
+let combined = try people.combine(with: age)
+
+print(combined) // ["andy": 25, "becky": 30, "catherine": 20]
+```
+
+#### Set
+
+The `combine` functionality / scenario is not suitable for Set data type. 
+
+Set in Swift can only contain elements of a single type. If you try to create a Set with elements of different types, you'll get a compilation error.
+
+#### Dictionary
+
+The `combine` functionality / scenario is not suitable for Dictionary data type. 
+
+However, you can use the `merge(_:uniquingKeysWith:)` method on dictionaries to combine them. 
+
 
 ### `sum`
 
