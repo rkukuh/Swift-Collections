@@ -27,7 +27,7 @@ import SwiftCollections
 
 ## Available Methods
 
-These following methods are all available on native Swift collection data types: `Array`, `Set`, and `Dictionary`.
+These following methods are all available on native Swift collection data types: `Array`, `Set`, and/or `Dictionary`.
 
 - [`average`](https://github.com/rkukuh/Swift-Collections#average)
 - [`chunk`](https://github.com/rkukuh/Swift-Collections#average)
@@ -255,14 +255,15 @@ print(combined) // ["andy": 25, "becky": 30, "catherine": 20]
 
 #### Set
 
-```swift
-let people: Set = ["andy", "becky", "catherine"]
-let age: Set = [25, 30, 20]
+The `combine` functionality / scenario is not suitable for Set data type. 
 
-let combined = try people.combine(with: age)
+Set in Swift can only contain elements of a single type. If you try to create a Set with elements of different types, you'll get a compilation error.
 
-print(combined) // ["catherine": 20, "andy": 25, "becky": 30]
-```
+#### Dictionary
+
+The `combine` functionality / scenario is not suitable for Dictionary data type. 
+
+However, you can use the `merge(_:uniquingKeysWith:)` method on dictionaries to combine them. 
 
 
 ### `sum`
