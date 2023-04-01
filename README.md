@@ -251,7 +251,7 @@ let age = [25, 30, 20]
 
 let combined = try people.combine(with: age)
 
-print(combined) // ["becky": 30, "catherine": 20, "andy": 25]
+print(combined) // ["andy": 25, "becky": 30, "catherine": 20]
 ```
 
 
