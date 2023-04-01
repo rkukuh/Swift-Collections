@@ -256,12 +256,12 @@ print(combined) // ["andy": 25, "becky": 30, "catherine": 20]
 #### Set
 
 ```swift
-let peopleSet: Set = ["andy", "becky", "catherine"]
-let ageSet: Set = [25, 30, 20]
+let people: Set = ["andy", "becky", "catherine"]
+let age: Set = [25, 30, 20]
 
-let combinedSet = try peopleSet.combine(with: ageSet)
+let combined = try people.combine(with: age)
 
-print(combinedSet) // ["catherine": 20, "andy": 25, "becky": 30]
+print(combined) // ["catherine": 20, "andy": 25, "becky": 30]
 ```
 
 
