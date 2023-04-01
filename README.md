@@ -245,13 +245,23 @@ The `combine` method combines the values of the collection, as keys, with the va
 #### Array
 
 ```swift
-
 let people = ["andy", "becky", "catherine"]
 let age = [25, 30, 20]
 
 let combined = try people.combine(with: age)
 
 print(combined) // ["andy": 25, "becky": 30, "catherine": 20]
+```
+
+#### Set
+
+```swift
+let peopleSet: Set = ["andy", "becky", "catherine"]
+let ageSet: Set = [25, 30, 20]
+
+let combinedSet = try peopleSet.combine(with: ageSet)
+
+print(combinedSet) // ["catherine": 20, "andy": 25, "becky": 30]
 ```
 
 
