@@ -289,6 +289,18 @@ let countByResult = emails.countBy { (email) -> String in
 print(countByResult) // // ["gmail.com": 2, "yahoo.com": 1]
 ```
 
+#### Dictionary
+
+```swift
+let userAges = ["Alice": 30, "Bob": 28, "Carlos": 30, "David": 28]
+
+let countByResult = userAges.countBy { (name, age) -> Int in
+    return age
+}
+
+print(countByResult) // [28: 2, 30: 2]
+```
+
 #### Set
 
 ```swift
