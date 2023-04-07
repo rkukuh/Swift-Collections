@@ -33,6 +33,7 @@ These following methods are all available on native Swift collection data types:
 - [`chunk`](https://github.com/rkukuh/Swift-Collections#average)
 - [`collapse`](https://github.com/rkukuh/Swift-Collections#collapse)
 - [`combine`](https://github.com/rkukuh/Swift-Collections#combine)
+- [`countBy`](https://github.com/rkukuh/Swift-Collections#countby)
 - [`sum`](https://github.com/rkukuh/Swift-Collections#sum)
 
 ## Usage
@@ -265,6 +266,28 @@ The `combine` functionality / scenario is not suitable for Dictionary data type.
 
 However, you can use the `merge(_:uniquingKeysWith:)` method on dictionaries to combine them. 
 
+### `countBy`
+
+The `countBy` method counts the occurrences of values in the collection.
+
+#### Array
+
+```swift
+let array = ["apple", "banana", "apple", "orange", "banana", "apple"]
+let countByResult = array.countBy()
+
+print(countByResult) // ["orange": 1, "banana": 2, "apple": 3]
+```
+
+```swift
+let emails = ["alice@gmail.com", "bob@yahoo.com", "carlos@gmail.com"]
+
+let countByResult = emails.countBy { (email) -> String in
+    return email.components(separatedBy: "@").last ?? ""
+}
+
+print(countByResult) // // ["gmail.com": 2, "yahoo.com": 1]
+```
 
 ### `sum`
 
