@@ -5,9 +5,8 @@
 //  Created by R. Kukuh on 08/04/23.
 //
 
-import Foundation
-
 import XCTest
+@testable import SwiftCollections
 
 class SetCountByClosureTests: XCTestCase {
     func testSetCountByClosure() {
