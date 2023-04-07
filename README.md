@@ -289,6 +289,18 @@ let countByResult = emails.countBy { (email) -> String in
 print(countByResult) // // ["gmail.com": 2, "yahoo.com": 1]
 ```
 
+#### Set
+
+```swift
+let emails: Set = ["alice@gmail.com", "bob@yahoo.com", "carlos@gmail.com"]
+
+let countByResult = emails.countBy { (email) -> String in
+    return (email as! String).components(separatedBy: "@").last ?? ""
+}
+
+print(countByResult) // ["gmail.com": 2, "yahoo.com": 1]
+```
+
 ### `sum`
 
 The `sum` method returns the sum of all items in the collection.
