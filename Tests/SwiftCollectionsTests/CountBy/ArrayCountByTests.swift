@@ -20,6 +20,7 @@ class ArrayCountByTests: XCTestCase {
     
     func testArrayCountByClosure() {
         let emails = ["alice@gmail.com", "bob@yahoo.com", "carlos@gmail.com"]
+        
         let countByResult = emails.countBy { (email) -> String in
             return email.components(separatedBy: "@").last ?? ""
         }

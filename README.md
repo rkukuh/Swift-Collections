@@ -289,6 +289,30 @@ let countByResult = emails.countBy { (email) -> String in
 print(countByResult) // // ["gmail.com": 2, "yahoo.com": 1]
 ```
 
+#### Dictionary
+
+```swift
+let userAges = ["Alice": 30, "Bob": 28, "Carlos": 30, "David": 28]
+
+let countByResult = userAges.countBy { (name, age) -> Int in
+    return age
+}
+
+print(countByResult) // [28: 2, 30: 2]
+```
+
+#### Set
+
+```swift
+let emails: Set = ["alice@gmail.com", "bob@yahoo.com", "carlos@gmail.com"]
+
+let countByResult = emails.countBy { (email) -> String in
+    return (email as! String).components(separatedBy: "@").last ?? ""
+}
+
+print(countByResult) // ["gmail.com": 2, "yahoo.com": 1]
+```
+
 ### `sum`
 
 The `sum` method returns the sum of all items in the collection.
